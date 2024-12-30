@@ -19,5 +19,12 @@
     <td th:text="${hey.hey}"></td>
   </tr>
 </table>
+
+<button id="color">Klik på mig!</button>
+<script>
+  document.getElementById("color").addEventListener("click", function () {
+  document.body.style.backgroundColor = "lightblue";
+  });
+</script>
 </body>
 </html>
