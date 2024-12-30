@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+</head>
+<body>
+<h1>Welcome to docker practise</h1>
+
+<form action="/createHey" method="post">
+  <td>Type a String: </td><td><input type="text" name="hey"></td>
+  <button type="submit">Submit!</button>
+</form>
+
+<table>
+  <thead><td>Person ID</td><td>String hey</td></thead>
+  <tr th:each="hey : ${heys}">
+    <td th:text="${hey.heyId}"></td>
+    <td th:text="${hey.hey}"></td>
+  </tr>
+</table>
+</body>
+</html>
